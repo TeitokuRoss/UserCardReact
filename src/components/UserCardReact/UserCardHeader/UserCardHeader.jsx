@@ -12,7 +12,7 @@ class UserCardHeader extends Component {
           src="https://www.kino-teatr.ru/news/16280/146942.jpg"
           className={styles.img}
         ></img>
-        <p className={styles.p}>{this.props.names}</p>
+        <p className={styles.p}>{this.props.names}retera23412312321easd</p>
       </header>
     );
   }

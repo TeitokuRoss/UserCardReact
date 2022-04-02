@@ -10,7 +10,7 @@ class UserCardBody extends Component {
       likesCount: 0,
     };
   }
-  increasLikes = (e) => {
+  increaseLikes = (e) => {
     const { likesCount } = this.state;
     this.setState({ likesCount: likesCount + 1 });
   };
@@ -18,7 +18,7 @@ class UserCardBody extends Component {
     const { likesCount } = this.state;
     return (
       <div>
-        <LikesCountButton increasLikes={this.increasLikes} />
+        <LikesCountButton increaseLikes={this.increaseLikes} />
         <ul className={styles.ul}>
           <li className={styles.li}>
             <p>Tweets</p>

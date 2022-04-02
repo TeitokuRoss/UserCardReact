@@ -1,6 +1,9 @@
 .ul {
+  display: flex;
   text-align: center;
+  font-size: small;
 }
 .li {
+  margin-right: 4px;
   display: inline;
 }

@@ -7,12 +7,12 @@ class LikesCountButton extends Component {
   }
 
   render() {
-    const { incraesLikes } = this.props;
+    const { increaseLikes } = this.props;
     return (
-      <button onClick={incraesLikes} className={styles.button}>
+      <button onClick={increaseLikes} className={styles.button}>
         +
       </button>
     );
   }
-} 
+}
 export default LikesCountButton;
