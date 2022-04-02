@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import UserCardHeader from "./UserCardHeader/UserCardHeader";
 import styles from "./UserCardReact.module.css";
 
 class UserCardReact extends Component {
@@ -7,6 +8,12 @@ class UserCardReact extends Component {
   }
   render() {
     const { likesCount } = this.state;
-    return <article></article>;
+    return (
+      <article>
+        <UserCardHeader />
+        
+        <UserCardBody />
+      </article>
+    );
   }
 }

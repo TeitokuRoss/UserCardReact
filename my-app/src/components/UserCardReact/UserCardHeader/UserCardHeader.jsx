@@ -18,4 +18,4 @@ class UserCardHeader extends Component {
   }
 }
 
-export default UserCardBody;
+export default UserCardHeader;

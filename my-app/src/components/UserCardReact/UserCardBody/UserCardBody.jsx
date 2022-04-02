@@ -7,17 +7,17 @@ class UserCardBody extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <li>
-            <p></p>
-            <p></p>
-          </li>
-          <li>
-            <p></p>
+        <ul className={styles.ul}>
+          <li className={styles.li}>
+            <p>Tweets</p>
             <p></p>
           </li>
-          <li>
+          <li className={styles.li}>
+            <p>Following</p>
             <p></p>
+          </li>
+          <li className={styles.li}>
+            <p>Followers</p>
             <p></p>
           </li>
         </ul>
