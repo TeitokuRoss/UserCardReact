@@ -5,12 +5,20 @@ import LikesCountButton from "./LikesCountButton/LikesCountButton.jsx";
 class UserCardBody extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      likesCount: 0,
+    };
   }
+  increasLikes = (e) => {
+    const { likesCount } = this.state;
+    this.setState({ likesCount: likesCount + 1 });
+  };
   render() {
-    const { likesCount } = this.props;
+    const { likesCount } = this.state;
     return (
       <div>
-        <LikesCountButton />
+        <LikesCountButton increasLikes={this.increasLikes} />
         <ul className={styles.ul}>
           <li className={styles.li}>
             <p>Tweets</p>
