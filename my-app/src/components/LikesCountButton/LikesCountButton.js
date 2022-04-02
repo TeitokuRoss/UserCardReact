@@ -16,7 +16,11 @@ class LikesCountButton extends Component {
   };
   render() {
     const { likesCount } = this.state;
-    return <button onClick={this.increasLikes}>+</button>;
+    return (
+      <button onClick={this.increasLikes} className={styles.button}>
+        +
+      </button>
+    );
   }
 }
 export default LikesCountButton;
